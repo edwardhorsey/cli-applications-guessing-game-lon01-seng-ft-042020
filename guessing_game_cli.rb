@@ -22,10 +22,10 @@ end
 end
 
 def game_result_message(result, computer_num)
-if result = true
-  puts "You guessed the correct number!"
-else
+if result = false
   puts "Sorry! The computer guessed #{computer_num}."
+else
+  puts "You guessed the correct number!"
 end
 end
 
