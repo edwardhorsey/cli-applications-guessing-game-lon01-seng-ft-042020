@@ -14,7 +14,7 @@ end
 def check_result(computer_num, user_num)
 puts computer_num
 puts user_num
-if user_num == computer_num
+if user_num.to_i == computer_num
     return true
 else
     return false
