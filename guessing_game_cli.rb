@@ -1,5 +1,3 @@
-# Code your solution here!
-
 def generate_rand_number
 num = rand(6)+1
 num
@@ -15,22 +13,22 @@ end
 
 def check_result(computer_num, user_num)
 if user_num == computer_num
-  return true
+    return "Yes"
 else
-  return false
+    return "No"
 end
 end
 
 def game_result_message(result, computer_num)
-if result == false
-  puts "Sorry! The computer guessed #{computer_num}."
+if result == "No"
+    puts "Sorry! The computer guessed #{computer_num}."
 else
-  puts "You guessed the correct number!"
+    puts "You guessed the correct number!"
 end
 end
 
 def exit_seq
-  puts "Goodbye!"
+    puts "Goodbye!"
 end
 
 def run_guessing_game
@@ -38,9 +36,10 @@ computer = generate_rand_number
 user_prompt
 user_guess = user_input
 if user_guess == "exit"
-  return exit_seq
+    return exit_seq
 end
 the_result = check_result(computer, user_guess)
 puts the_result
 return game_result_message(the_result, computer)
 end
+
