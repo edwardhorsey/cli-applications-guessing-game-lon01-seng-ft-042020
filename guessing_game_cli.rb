@@ -13,9 +13,9 @@ end
 
 def check_result(computer_num, user_num)
 if user_num == computer_num
-    return "Yes"
+    return true
 else
-    return "No"
+    return false
 end
 end
 
