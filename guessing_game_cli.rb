@@ -42,5 +42,3 @@ end
 the_result = check_result(computer, user_guess)
 game_result_message(the_result, computer)
 end
-
-run_guessing_game
