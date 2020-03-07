@@ -40,6 +40,7 @@ user_guess = user_input
 if user_guess == "exit"
   return exit_seq
 end
-theresult = check_result(computer, user_guess)
-return game_result_message(theresult, computer)
+the_result = check_result(computer, user_guess)
+puts the_result
+return game_result_message(the_result, computer)
 end
