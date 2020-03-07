@@ -12,8 +12,6 @@ gets.chomp
 end
 
 def check_result(computer_num, user_num)
-puts computer_num
-puts user_num
 if user_num.to_i == computer_num
     return true
 else
@@ -22,9 +20,8 @@ end
 end
 
 def game_result_message(result, computer_num)
-  puts result
 if result
-  puts "You guessed the correct number!"
+    puts "You guessed the correct number!"
 else
     puts "Sorry! The computer guessed #{computer_num}."
 end
@@ -35,6 +32,7 @@ def exit_seq
 end
 
 def run_guessing_game
+puts "welcome to the GAAAAAMBULLLL!!!"
 computer = generate_rand_number
 user_prompt
 user_guess = user_input
@@ -45,3 +43,4 @@ the_result = check_result(computer, user_guess)
 game_result_message(the_result, computer)
 end
 
+run_guessing_game
